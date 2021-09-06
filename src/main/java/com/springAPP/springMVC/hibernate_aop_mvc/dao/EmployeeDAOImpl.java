@@ -15,7 +15,6 @@ public class EmployeeDAOImpl implements EmployeeDAO{
     private SessionFactory sessionFactory;
 
     @Override
-    @Transactional //spring opened and closed transaction
     public List<Employee> getAllEmployees() {
         Session session = sessionFactory.getCurrentSession();
 
